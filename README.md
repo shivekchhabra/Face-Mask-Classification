@@ -5,7 +5,9 @@ This involves the following steps:
 	1- First it detects face using Facenet (using a predefined model)
 		This is better than Haar Cascade since it also detects faces of people wearing glasses and hence is more accurate
 
-	2- Using Facial Landmarks, it classifies if a person is wearing a mask or not.
+	2- Then in the region of interest it applies the trained mask model to see if the person is wearing a mask or not.
+
+Please note: The dataset was originally created using facial landmarks.
 
 	
 The model used is Mobilenetv2 with fine tuning on its head.
